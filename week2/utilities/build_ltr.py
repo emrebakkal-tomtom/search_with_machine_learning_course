@@ -21,7 +21,8 @@ import xgb_utils as xgbu
 from opensearchpy import OpenSearch
 
 
-
+import warnings
+warnings.filterwarnings("ignore")
 
 if __name__ == "__main__":
     host = 'localhost'
