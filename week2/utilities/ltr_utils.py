@@ -4,7 +4,7 @@ import requests
 
 
 def create_rescore_ltr_query(user_query, query_obj, click_prior_query, ltr_model_name, ltr_store_name,
-                             active_features=None, rescore_size=500, main_query_weight=0, rescore_query_weight=1):
+                             active_features=None, rescore_size=500, main_query_weight=1, rescore_query_weight=2):
     # Create the base query, use a much bigger window
     #add on the rescore
     query_obj["rescore"] = {
